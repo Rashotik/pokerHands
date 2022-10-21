@@ -48,7 +48,7 @@ public class PokerHand implements Comparable<PokerHand>{
         if(cards[0].startsWith("A") && street(cards)){
             return flash(cards);
         }
-        return true;
+        return false;
     }
     private boolean streetFlash(String[] cards){
         if(flash(cards))
