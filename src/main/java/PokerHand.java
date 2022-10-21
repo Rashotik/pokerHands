@@ -1,5 +1,10 @@
 import java.util.Arrays;
 
+/**
+ * первый символ — это номинал карты. Допустимые значения: 2, 3, 4, 5, 6, 7, 8, 9, T(en),
+ * J(ack), Q(ueen), K(ing), A(ce);
+ * второй символ — масть. Допустимые значения: S(pades) пики, H(earts) червы, D(iamonds) буби, C(lubs) крести.
+ * */
 public class PokerHand implements Comparable<PokerHand>{
     private String hand;
     private Integer power;
@@ -12,11 +17,6 @@ public class PokerHand implements Comparable<PokerHand>{
         this.kicker = 0;
         range();
     }
-/**
- * первый символ — это номинал карты. Допустимые значения: 2, 3, 4, 5, 6, 7, 8, 9, T(en),
- * J(ack), Q(ueen), K(ing), A(ce);
- * второй символ — масть. Допустимые значения: S(pades) пики, H(earts) червы, D(iamonds) буби, C(lubs) крести.
- * */
     private void range(){
         String[] cards = hand.split(" ");
         Arrays.sort(cards);
