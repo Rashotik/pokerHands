@@ -9,6 +9,7 @@ public class PokerHand implements Comparable<PokerHand>{
     private String hand;
     private Integer power;
     private int kicker;
+    //combopower
     private int comboPower;
 
     public PokerHand(String hand) {
